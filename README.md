@@ -1,4 +1,4 @@
-# elcava
+# M-x elcava
 
 Audio spectrum visualizer for Emacs. Captures system audio via PipeWire/PulseAudio, computes FFT in pure Elisp, and renders Unicode bar charts in a buffer. Linux/PipeWire only.
 
@@ -11,24 +11,24 @@ Audio spectrum visualizer for Emacs. Captures system audio via PipeWire/PulseAud
 
 ## Installation
 
-### straight.el
-
-```elisp
-(use-package elcava
-  :straight (:host github :repo "emacs-os/elcava")
-  :commands elcava
-  :custom
-  (elcava-style 'spectrum))
-```
-
 ### elpaca
 
 ```elisp
 (use-package elcava
   :ensure (:host github :repo "emacs-os/elcava")
-  :commands elcava
-  :custom
-  (elcava-style 'spectrum))
+  :defer t
+  :config
+  (setq elcava-style 'spectrum))
+```
+
+### straight.el
+
+```elisp
+(use-package elcava
+  :straight (:host github :repo "emacs-os/elcava")
+  :defer t
+  :config
+  (setq elcava-style 'spectrum))
 ```
 
 ## Usage
