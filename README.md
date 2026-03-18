@@ -58,7 +58,7 @@ Set your default with `(setq elcava-style 'spectrum)`.
 
 ```elisp
 (setq elcava-bars 24              ; number of bars
-      elcava-framerate 30         ; target FPS
+      elcava-framerate 60         ; target FPS
       elcava-noise-reduction 0.77 ; smoothing (0=fast, 1=smooth)
       elcava-gravity 1.8          ; bar falloff speed
       elcava-low-cutoff 50        ; low frequency Hz
